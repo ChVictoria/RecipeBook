@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="styles/style.css" rel="stylesheet" />
+    <script src="scripts/script.js"></script>
+    <title>Recipe book</title>
+
+</head>
+<body>
+    <header>
+        <h1>Хачапурі по-аджарськи</h1>
+        <div class="properties">
+            <div class="property">
+                <div class="property-title">
+                    Час приготування
+                    <img class="icon" src="images/clock-icon.svg" alt="Час"/>
+                </div>
+                <div class="property-value">65 хв</div>
+            </div>
+            <div class="property">
+                <div class="property-title">
+                    Складність
+                    <img class="icon" src="images/chef-hat.svg" alt="Складність"/>
+                </div>
+                <div class="property-value">легко</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="ingredients">
+        <h2>Інгредієнти</h2>
+        <label for="portions-number">Кількість порцій <input class="portions" type="number" min = 1 id="portions-number"
+                                                             placeholder="4" oninput="countQuantity()"></label>
+
+        <h3>Для тіста:</h3>
+        <label><input class="item" type="checkbox" />
+            <span class="ingredient">Борошно</span>
+            <span class="quantity">400</span>
+            <span class="units">г</span>
+        </label>
+        <label><input class="item" type="checkbox" />
+            <span class="ingredient">Вода</span>
+            <span class="quantity">180</span>
+            <span class="units">мл</span>
+        </label>
+        <label><input class="item" type="checkbox" />
+            <span class="ingredient">Молоко</span>
+            <span class="quantity">100</span>
+            <span class="units">мл</span>
+        </label>
+        <label><input class="item" type="checkbox" />
+            <span class="ingredient">Соняшникова олія</span>
+            <span class="quantity">2</span>
+            <span class="units">ст.л.</span>
+        </label>
+        <label><input class="item" type="checkbox" />
+            <span class="ingredient">Сухі дріжджі</span>
+            <span class="quantity">1</span>
+            <span class="units">ч.л.</span>
+        </label>
+        <label><input class="item" type="checkbox" />
+            <span class="ingredient">Сіль</span>
+            <span class="quantity">1</span>
+            <span class="units">ч.л.</span>
+        </label>
+        <label><input class="item" type="checkbox" />
+            <span class="ingredient">Цукор</span>
+            <span class="quantity">1</span>
+            <span class="units">ч.л.</span>
+        </label>
+        <h3>Для начинки:</h3>
+        <label><input class="item" type="checkbox" />
+            <span class="ingredient">Сулугуні або імеретинський сир</span>
+            <span class="quantity">450</span>
+            <span class="units">г</span>
+        </label>
+        <label><input class="item" type="checkbox" />
+            <span class="ingredient">Сир кисломолочний</span>
+            <span class="quantity">150</span>
+            <span class="units">г</span>
+        </label>
+        <label><input class="item" type="checkbox" />
+            <span class="ingredient">Яйця</span>
+            <span class="quantity">2</span>
+            <span class="units">шт</span>
+        </label>
+        <label><input class="item" type="checkbox" />
+            <span class="ingredient">Молоко</span>
+            <span class="quantity">3</span>
+            <span class="units">ст.л.</span>
+        </label>
+    </div>
+
+    <div class="description">
+    <img src="images/hachapuri.jpg" alt="Хачапурі"/>
+    <p>Батьківщиною хачапурі по-аджарськи вважається південно-західна частина Грузії, Аджарія.
+    Називається воно так не випадково: перша частина слова "хачо" означає сир, друга "пурі" - хліб.
+    За легендою цю страву придумали жінки моряків: коли вони увечері повертались втомлені додому,
+    на них чекали такі ситні човники з сиром та рідким яєчним жовтком.</p>
+    </div>
+
+
+    <div class="recipe">
+        <h2>Рецепт</h2>
+        <ol>
+            <li>Замісіть тісто для хачапурі по-аджарськи. Для цього в мисці з'єднайте борошно, сіль, цукор і дріжджі.
+                Все перемішайте і додайте теплу воду і молоко.</li>
+            <li>Додайте до тіста соняшникову олію. Замісіть м'яке тісто, що не липне до рук. Якщо є необхідність, то додайте
+                ще трохи борошна. Якщо ж тісто занадто туге, то розведіть його трохи молоком або водою. Сформуйте кулю з тіста.
+                Вона має бути однорідною і глянцевою. Акуратно покладіть в миску, змащену олією, і залиште в теплому
+                місці на 40 хвилин для підйому. </li>
+            <li>Тим часом приготуйте начинку. Для цього натріть на крупній терці сулугуні в миску і додайте сир.
+                Введіть яйця, молоко, сіль і мелений перець, якщо забажаєте. Все добре перемішайте і відставте до моменту
+                формування хачапурі.</li>
+            <li>Далі розділіть тісто на кульки за кількістю хачапурі, які будете випікати. </li>
+            <li>Візьміть кулю з тіста і розкачайте її в тонкий пласт.</li>
+            <li>Викладіть готове начинювання на тісто і акуратно розподіліть його, щоб краї залишалися вільними.</li>
+            <li>Сформуйте так званий «човник», трохи звернувши краї до начинювання.</li>
+            <li>Перекладіть хачапурі на деко, застелене пергаментом.</li>
+            <li>Краї тіста змастіть жовтком. Випікайте хачапурі в духовці за температури 230 градусів протягом 15-20
+                хвилин в режимі конвекції. </li>
+            <li>Дістаньте рум'яні хачапурі та в кожен з «човників» вбийте по 1 жовтку. Знову поверніть в духовку на
+                1-2 хвилини, щоб жовток прогрівся і зовсім трошки прихопився, і відразу ж виймайте.</li>
+        </ol>
+    </div>
+</body>
+</html>
