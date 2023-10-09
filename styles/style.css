@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;600&family=Roboto+Serif:ital,opsz,wght@0,8..144,400;1,8..144,100&display=swap');
 body {
     font-family: "Roboto Serif", sans-serif;
-    margin: 3%;
-    padding-top: 10px;
+    margin: 5%;
     background: #ECFFF8;
-    margin-left: 70px;
+
 }
 
 header {
@@ -71,7 +70,7 @@ img {
     text-align: center;
 }
 
-.ingredients{
+#ingredients{
     position: sticky;
     top: 10px;
     background: #2E4756;
@@ -82,20 +81,19 @@ img {
     padding-bottom: 20px;
     color: #ECFFF8;
     letter-spacing: 1px;
-    animation-duration: 4s;
 
 }
 
-.ingredients label{
+#ingredients label{
     display:block;
 }
 
-.description{
+#description{
     width: 65%;
     margin-top: 10px;
 }
 
-.recipe{
+#recipe{
     width:65%;
     line-height: 2em;
 }
@@ -164,4 +162,36 @@ input.item{
     from  {right: 0;}
     to {right: 500px;}
 
+}
+
+@media (max-width: 500px) {
+    #ingredients{
+        position: sticky;
+        float: none;
+        font-size: small;
+        width: 97%;
+        height: 200px;
+        overflow-y:scroll;
+
+    }
+    #description{
+        width: 100%;
+
+    }
+
+    #recipe{
+        width:100%;
+        line-height: 2em;
+    }
+
+    header h1 {
+        font-size: xx-large;
+    }
+    .properties{
+        font-size: x-small;
+        padding: 3px;
+    }
+    header{
+        margin-bottom: 10px;
+    }
 }
