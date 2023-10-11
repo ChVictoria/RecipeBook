@@ -1,5 +1,5 @@
-let portions = 4
-let newPortions = 4
+let portions = 8
+let newPortions = 8
 function productQuantity(currentQuantity){
     let quantityPerPortion = currentQuantity/portions
     return quantityPerPortion*newPortions
@@ -18,6 +18,4 @@ function countQuantity(){
     }
     portions = newPortions
 }
-
-
 

@@ -24,10 +24,19 @@ header h1{
 
 
 img {
-    border: 0;
     border-radius: 5px;
     width: 100%;
 }
+
+.steps{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 80%;
+
+}
+
 .icon{
     border: 0;
     width: 20px;
@@ -38,7 +47,7 @@ img {
 .properties{
     display: flex;
     border-radius: 5px;
-    box-shadow: 0 0 0 5px #78290F;
+    box-shadow: 0 0 0 5px #DB1515;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -53,12 +62,11 @@ img {
 }
 
 .properties:hover{
-    background: #78290F;
+    background: #e53939;
     color: #ECFFF8;
 }
 .properties div {
     text-align: center;
-
     align-items: center;
     justify-content: center;
 
@@ -132,7 +140,7 @@ ol li::before {
 input {
     text-align: center;
     border-radius: 20px;
-    color: #78290F;
+    color: #e53939;
     font-weight: bold;
     background: #ECFFF8;
     font-size: 1.2em;
@@ -169,7 +177,7 @@ input.item{
         position: sticky;
         float: none;
         font-size: small;
-        width: 97%;
+        width: 96.5%;
         height: 200px;
         overflow-y:scroll;
 
@@ -181,7 +189,6 @@ input.item{
 
     #recipe{
         width:100%;
-        line-height: 2em;
     }
 
     header h1 {
